@@ -1,0 +1,6 @@
+CREATE PROCEDURE AmbilDetailSiswa(
+    IN p_nomor_pendaftaran VARCHAR(20)
+)
+BEGIN
+    SELECT * FROM siswa WHERE nomor_pendaftaran = p_nomor_pendaftaran;
+END //
